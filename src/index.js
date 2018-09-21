@@ -6,11 +6,10 @@ import Profile from './containers/Profile'
 
 
 ReactDOM.render(
+    <div style={{marginLeft:""}}>
     <Router>
-        <Switch>
-            <Route exact path="/" component={Template}/>
-            <Route path = {'/profile'} component={Profile}/>
-        </Switch>
-    </Router>,
+        <Route path="/" component={Template}/>
+    </Router>
+    </div>,
     document.getElementById('root')
 );

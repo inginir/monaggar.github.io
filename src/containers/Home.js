@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
+import MenuDrawer from '../components/MenuDrawer'
 
-class Home extends Component {
+export default class Home extends Component {
 
   render() {
     return (
@@ -10,5 +11,3 @@ class Home extends Component {
     )
   }
 }
-
-export default Home

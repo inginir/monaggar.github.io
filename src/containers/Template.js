@@ -1,26 +1,35 @@
 import React, { Component } from 'react'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import RaisedButton from 'material-ui/RaisedButton'
-
+import MenuDrawer from '../components/MenuDrawer'
+import { Route } from 'react-router-dom';
+import Profile from './Profile'
+import Home from './Home'
+import { Header, Main } from '../styled/Template.js'
 
 class Template extends Component {
 
   render() {
     return (
-      <MuiThemeProvider>
-        <div>
-          <header>
-            <h1>TicTacToe</h1>
-            <p>Template!</p>
-            <RaisedButton label={'WHOOO dis?'} 
-                          primary={true}
-                          onMouseEnter={() => console.log("heloooo")}/>
-          </header>
-          <main>
-            {this.props.children}
-          </main>
-        </div>
-      </MuiThemeProvider>
+      <div>
+        <MuiThemeProvider>
+          <div>
+            <MenuDrawer />
+            <Header>
+              CSG Template
+            </Header>
+
+            <Main>
+              {this.props.children}
+              Main!!!!!!!!
+            </Main>
+
+          </div>
+        </MuiThemeProvider>
+
+        <Route path="/Profile" component={Profile} />
+        <Route path="/Home" component={Home} />
+
+      </div>
     )
   }
 }
