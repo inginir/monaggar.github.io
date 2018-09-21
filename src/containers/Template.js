@@ -4,7 +4,7 @@ import MenuDrawer from '../components/MenuDrawer'
 import { Route } from 'react-router-dom';
 import Profile from './Profile'
 import Home from './Home'
-import { Header, Main } from '../styled/Template.js'
+import { Header, Main } from '../styled/Template'
 
 class Template extends Component {
 
