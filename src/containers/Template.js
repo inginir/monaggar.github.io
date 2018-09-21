@@ -4,7 +4,7 @@ import MenuDrawer from '../components/MenuDrawer'
 import { Route } from 'react-router-dom';
 import Profile from './Profile'
 import Home from './Home'
-import { Header, Main } from '../styled/styledTemplate'
+import { Header, Main } from '../styled/Template'
 
 class Template extends Component {
 
@@ -16,12 +16,12 @@ class Template extends Component {
 						<MenuDrawer />
 						<Header>
 							CSG Template
-            		</Header>
+            			</Header>
 
 						<Main>
 							{this.props.children}
 							Main!!!!!!!!
-            		</Main>
+            			</Main>
 
 					</div>
 				</MuiThemeProvider>
