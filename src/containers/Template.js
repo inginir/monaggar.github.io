@@ -8,30 +8,30 @@ import { Header, Main } from '../styled/Template.js'
 
 class Template extends Component {
 
-  render() {
-    return (
-      <div>
-        <MuiThemeProvider>
-          <div>
-            <MenuDrawer />
-            <Header>
-              CSG Template
-            </Header>
+	render() {
+		return (
+			<div>
+				<MuiThemeProvider>
+					<div>
+						<MenuDrawer />
+						<Header>
+							CSG Template
+            		</Header>
 
-            <Main>
-              {this.props.children}
-              Main!!!!!!!!
-            </Main>
+						<Main>
+							{this.props.children}
+							Main!!!!!!!!
+            		</Main>
 
-          </div>
-        </MuiThemeProvider>
+					</div>
+				</MuiThemeProvider>
 
-        <Route path="/Profile" component={Profile} />
-        <Route path="/Home" component={Home} />
+				<Route path="/Profile" component={Profile} />
+				<Route path="/Home" component={Home} />
 
-      </div>
-    )
-  }
+			</div>
+		)
+	}
 }
 
 export default Template

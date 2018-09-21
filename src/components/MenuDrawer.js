@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
-import Divider from 'material-ui/Divider'
-import FloatingActionButton from 'material-ui/FloatingActionButton'
-import Menu from 'material-ui/svg-icons/navigation/menu'
 import { Link } from 'react-router-dom'
 import NavDrawer from '../styled/NavDrawer'
 
@@ -13,7 +10,7 @@ export default class MenuDrawer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            open: true,
+            open: false,
             width: 250
         }
 

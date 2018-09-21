@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import MenuDrawer from '../components/MenuDrawer'
 
 export default class Home extends Component {
 
