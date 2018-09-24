@@ -51,12 +51,16 @@ export default class MenuDrawer extends Component {
                         <MenuItem primaryText={'change user'} onClick={this.toggle}/>
                     </Link>
 
-                    <Link to={'/profile'}>
+                    <Link to={'/sequences'}>
                         <MenuItem primaryText={'my sequences'} onClick={this.toggle}/>
                     </Link>
 
-                    <Link to={'/'}>
+                    <Link to={'/sequences'}>
                         <MenuItem primaryText={'new sequence'} onClick={this.toggle}/>
+                    </Link>
+
+                    <Link to={'/courses'}>
+                        <MenuItem primaryText={'new course'} onClick={this.toggle}/>
                     </Link>
 
                 </Drawer>
